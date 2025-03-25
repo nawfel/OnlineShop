@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace Catalog.Api.Repositories;
 
-public class ProductRepository(ICatalogContext _catalogContext) : IProductRepository
+public class ProductRepository : IProductRepository
 {
     public async Task<IEnumerable<Product>> GetAll()
     {
